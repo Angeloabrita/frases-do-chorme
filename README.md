@@ -11,7 +11,7 @@ Essa extensão usa a API [https://allugofrases.herokuapp.com](https://allugofras
 fique a vontade para clonar 
 
 ```bash
-  git clone blabla.git
+  git clone https://github.com/Angeloabrita/frases-do-chorme.git
 ```
     
 ## Authors

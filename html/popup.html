@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(255, 250, 250); border-color: black; border-style: solid;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <img src="../icon128.png" alt="Logo Agta studios" >
+      
+      <div style=" text-align: center; font-family: sans-serif; padding: 2rem; margin-top: 1rem; ">
+         <h1 id="bla">Configuração</h1>
+   
+          <span><p>intervalo atual entre as msg é: </p> <strong><p id="replyTime"></p> </strong></span>
+           
+          
+      </div>
+      
+    </div>
+    <div style="display: block; margin: 15px;">
+      <label for="time">Intervalo das notificações(min)</label>
+      <input type="number" name="time" id="timeIn"  min="0.5" max="1440" step="0.5">
+      <button id="btnSalveTime">Salvar</button>
+
+    </div>
+
+    <div style="display: block; text-align: center;">
+      <p>essa extenção usada dados do: <a href="https://allugofrases.herokuapp.com/frases/random" target="_blank" rel="noopener noreferrer">allugofrases</a></p>
+
+    </div>
+
+   <script  src="../js/popup.js"></script>
+
+  </body>
+</html>
+

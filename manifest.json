@@ -1,0 +1,25 @@
+{
+    "name": "Frases do dia",
+    "description": "Frases e pensamentos para começar bem o dia!",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "icons": { "16": "icon16.png",
+      "48": "icon48.png",
+     "128": "icon128.png" },
+
+    "background": {
+      "service_worker":"background.js"
+     
+    },
+    "permissions": [ "storage",  "alarms", "notifications"],
+
+    "action": {
+        "default_popup": "html/popup.html"
+      },
+      
+      "host_permissions": [
+        "https://allugofrases.herokuapp.com/frases/*"
+      ]
+
+  }

@@ -10,12 +10,13 @@ var randomProperty = function (obj) {
 async function load() {
 
   let shitAgain = []
-  
+  //get json data API from allugofrases.herokuapp.com
   await fetch('https://allugofrases.herokuapp.com/frases/random')
     .then((res) => res.json())
     .then((resJson) => {
 
       //**push the notification */  
+      
       chrome.notifications.create('test', {
         type: 'basic',
         iconUrl: 'icon128.png',
@@ -23,6 +24,8 @@ async function load() {
         message: resJson['frase'] + " - " + resJson['livro'],
         priority: 1
       })
+
+      
     }).catch(() => {
       //**if API donw use the local json frases */
       fetch('./data.json')
